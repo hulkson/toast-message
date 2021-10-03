@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <title>Button - Toast Message</title>
+</head>
+
+<body>
+  <!-- tạo 1 div class toast rỗng, sau này tự truyền thông tin vào -->
+
+  <div id="toast">
+    <!-- <div class="toast toast--success">
+      <div class="toast__icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+
+      <div class="toast__content">
+        <h3 class="toast__title">Success</h3>
+        <p class="toast__msg">This is Toast body message content this is message</p>
+      </div>
+
+      <div class="toast__close">
+        <i class="far fa-times-circle"></i>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- button call toast -->
+  <div>
+    <div onclick="showSuccessToast();" class="btn btn--success">show success toast</div>
+    <div onclick="showErrorToast();" class="btn btn--error">show error toast</div>
+    <!-- call toast button js -->
+    <script src="js/call_toast.js" charset="utf-8"></script>
+  </div>
+
+
+
+  <!-- Toast Message -->
+  <!-- <div> -->
+    <!-- Toast Success -->
+    <!-- <div class="toast toast--success">
+      <div class="toast__icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+
+      <div class="toast__content">
+        <h3 class="toast__title">Success</h3>
+        <p class="toast__msg">This is Toast body message content this is testing message</p>
+      </div>
+
+      <div class="toast__close">
+        <i class="far fa-times-circle"></i>
+      </div>
+    </div> -->
+
+    <!-- Toast Info -->
+    <!-- <div class="toast toast--info">
+      <div class="toast__icon">
+        <i class="fas fa-info-circle"></i>
+      </div>
+
+      <div class="toast__content">
+        <h3 class="toast__title">Info</h3>
+        <p class="toast__msg">This is Toast body message content</p>
+      </div>
+
+      <div class="toast__close">
+        <i class="far fa-times-circle"></i>
+      </div>
+    </div> -->
+
+    <!-- Toast Warning -->
+    <!-- <div class="toast toast--warning">
+      <div class="toast__icon">
+        <i class="fas fa-exclamation-circle"></i>
+      </div>
+
+      <div class="toast__content">
+        <h3 class="toast__title">Warning</h3>
+        <p class="toast__msg">Try again</p>
+      </div>
+
+      <div class="toast__close">
+        <i class="far fa-times-circle"></i>
+      </div>
+    </div> -->
+
+    <!-- Toast Error -->
+    <!-- <div class="toast toast--error">
+      <div class="toast__icon">
+        <i class="fas fa-exclamation"></i>
+      </div>
+
+      <div class="toast__content">
+        <h3 class="toast__title">Error</h3>
+        <p class="toast__msg">Something went wrong</p>
+      </div>
+
+      <div class="toast__close">
+        <i class="far fa-times-circle"></i>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <!-- Button tạo để preview -->
+  <!-- <div>
+    <div class="btn btn--size-s btn--success">GO TO NEXT APPROVAL</div>
+    <div class="btn btn--size-s btn--warning btn--disable">OK</div>
+    <div class="btn btn--size-s btn--error">TRY AGAIN</div>
+  </div>
+
+  <div>
+    <div class="btn btn--size-m btn--success">GO TO NEXT APPROVAL</div>
+    <div class="btn btn--size-m btn--warning btn--disable">OK</div>
+    <div class="btn btn--size-m btn--error">TRY AGAIN</div>
+  </div>
+
+  <div>
+    <div class="btn btn--size-l btn--success">GO TO NEXT APPROVAL</div>
+    <div class="btn btn--size-l btn--warning btn--disable">OK</div>
+    <div class="btn btn--size-l btn--error">TRY AGAIN</div>
+  </div> -->
+</body>
+</html>

@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue";
+  background-color: #f4f4f5;
+}
+
+body > div {
+  margin: auto;
+}
+
+/* toast with js */
+#toast {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  z-index: 10;
+}
+
+/* Toast Message */
+.toast {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  padding: 20px 0px;
+  min-width: 400px;
+  max-width: 450px;
+  border-left: 4px solid;
+  border-radius: 2px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  /* toast slide effect */
+  transition: all linear 0.5s;
+  /* animation: slideToLeft 0.5s ease,
+             fadeOut 1s 2.5s linear forwards; */
+}
+
+@keyframes slideToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(calc(100% + 35px));
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  /* mặc định đã hiện thị rồi nên opacity = 1 sẵn */
+  to {
+    opacity: 0;
+  }
+}
+
+.toast + .toast {
+  margin-top: 24px;
+}
+
+.toast__icon {
+  padding: 0 16px;
+  font-size: 24px;
+  min-width: 56px;
+  text-align: center;
+}
+
+.toast__content {
+  flex-grow: 1; /* đẩy close icon về left */
+}
+
+.toast__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.toast__msg {
+  font-size: 16px;
+  margin-top: 4px;
+  line-height: 1.5;
+  color: #888;
+}
+
+.toast__close {
+  padding: 0 16px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.toast__close:hover {
+  opacity: 0.6;
+}
+
+.toast--success {
+  border-color: #47d864;
+  color: #47d864;
+}
+
+.toast--info {
+  border-color: #2f86eb;
+  color: #2f86eb;
+}
+
+.toast--warning {
+  border-color: #ffc021;
+  color: #ffc021;
+}
+
+.toast--error {
+  border-color: red;
+  color: red;
+}
+
+
+
+
+/* Button */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  min-width: 120px;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn + .btn {
+  margin-left: 18px;
+}
+
+.btn--size-s {
+  padding: 8px 16px;
+  font-size: 85%;
+}
+
+.btn--size-l {
+  padding: 18px 30px;
+}
+
+.btn--success {
+  background-color: #71be34;
+}
+
+.btn--warning {
+  background-color: #ffb702;
+}
+
+.btn--error {
+  background-color: #ff623d;
+}
+.btn--disable {
+  opacity: 0.5 !important;
+  cursor: default;
+  background-color: #ccc;
+}
